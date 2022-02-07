@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coverage_Policy_Manual__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Product_Line__c,"ABCBS"),HYPERLINK("https://secure.arkansasbluecross.com/members/coverage_policy_disclaimer.aspx","ABCBS","_blank"),IF(ISPICKVAL(Product_Line__c,"HA"),HYPERLINK("https://secure.arkansasbluecross.com/members/coverage_policy_disclaimer.aspx","HA","_blank"),IF(ISPICKVAL(Product_Line__c,"BAA"),HYPERLINK("https://secure.blueadvantagearkansas.com/providers/MPreCertRouter.aspx","BAA","_blank"), IF(ISPICKVAL(Product_Line__c,"Walmart"),HYPERLINK("https://walmart.abcbs.net/coverage/coverage_policy.aspx","Walmart","_blank"),IF(ISPICKVAL(Product_Line__c,"BANA"),HYPERLINK("https://secure.blueadvantagearkansas.com/providers/BAAMedicalpolicy.aspx?prefix=TYG","BANA","_blank"),"")))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Coverage Policy Manual</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
